@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/weekly_demand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Haftalık Talep İhtiyacı (birim)" />
+
+
+    <EditText
+        android:id="@+id/max_capacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Depo Kapasitesi (birim)" />
+
+    <EditText
+        android:id="@+id/user_stock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Depoda Tutulacak Miktar" />
+
+    <EditText
+        android:id="@+id/user_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dışarıdan Sipariş Edilecek Miktar" />
+
+    <EditText
+        android:id="@+id/cost_per_storage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Depo Maliyeti (TL)" />
+
+    <EditText
+        android:id="@+id/cost_per_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sipariş Maliyeti (TL)" />
+
+    <EditText
+        android:id="@+id/profit_per_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ürün Başına Haftalık Kazanç (TL)" />
+
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hesapla" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sonuç"
+        android:paddingTop="16dp"
+        android:textSize="12dp"/>
+
+</LinearLayout>
